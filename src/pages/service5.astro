@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import JoinUs from '../components/JoinUs.astro';
+---
+
+<Layout title="Our Services">
+  <!-- Hero Section -->
+  <div class="relative bg-gray-900 py-32">
+    <div class="absolute inset-0">
+      <img class="w-full h-full object-cover opacity-40" src="/src/assets/about/about1.png" alt="Services Hero" />
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Transform Your Business</h1>
+      <p class="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">Innovative solutions for modern challenges</p>
+    </div>
+  </div>
+
+  <!-- Services Section with Large Image and Cards -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8">
+      <!-- Large Image on the Left -->
+      <div class="relative w-full lg:w-1/2">
+        <img class="w-full h-full object-cover rounded-lg shadow-md" src="./src/assets/serviceimg/service1.png" alt="Our Services" />
+        
+        <!-- 5 Stars at Top Left Corner -->
+        <div class="absolute top-0 left-3 flex space-x-1 text-2xl">
+          <span class="text-yellow-500">★</span>
+          <span class="text-yellow-500">★</span>
+          <span class="text-yellow-500">★</span>
+          <span class="text-yellow-500">★</span>
+          <span class="text-yellow-500">★</span>
+        </div>
+
+        <!-- Circles at Bottom Right -->
+        <div class="absolute bottom-4 right-4 flex space-x-2">
+          <div class="w-4 h-4 bg-red-500 rounded-full"></div>
+          <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+          <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+        </div>
+
+        <!-- Updated Button -->
+        <div class="absolute bottom-4 left-4">
+          <a href="https://b2b.travelplatformonline.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            Know More
+          </a>
+        </div>
+      </div>
+
+      <!-- Cards on the Right -->
+      <div class="w-full lg:w-1/2 space-y-6">
+        <!-- Service 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900">🏢 B2B Booking Solutions</h3>
+          <p class="mt-2 text-gray-600">For Travel Agencies and Corporate Entities.</p>
+          <a href="https://b2b.travelplatformonline.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            More Info
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900">✈️ Visa Change by Flight</h3>
+          <p class="mt-2 text-gray-600">Quick and easy visa change services.</p>
+          <a href="https://b2b.travelplatformonline.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            Explore
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900">🚌 Visa Change by Bus</h3>
+          <p class="mt-2 text-gray-600">Affordable visa change services by bus.</p>
+          <a href="https://b2b.travelplatformonline.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            More Info
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900">📍 Visa Change Service from Fujairah</h3>
+          <p class="mt-2 text-gray-600">Reliable visa change services directly from Fujairah.</p>
+          <a href="https://b2b.travelplatformonline.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900">🗓️ Bus/Flight Updated Availability</h3>
+          <p class="mt-2 text-gray-600">Stay updated with the latest bus and flight schedules.</p>
+          <a href="https://b2b.travelplatformonline.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            More Info
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900">🎫 Offers & Promotions</h3>
+          <p class="mt-2 text-gray-600">Take advantage of our latest offers and promotions.</p>
+          <a href="https://b2b.travelplatformonline.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            Explore
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <JoinUs />
+</Layout>
