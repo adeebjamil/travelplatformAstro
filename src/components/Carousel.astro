@@ -18,6 +18,8 @@ import bannerPlane from '../assets/carousel/bannerplane.svg';
           width={1500}
           height={1080}
           class="carousel-image"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     ))}
@@ -135,7 +137,6 @@ import bannerPlane from '../assets/carousel/bannerplane.svg';
   let currentSlide = 0;
   const slides = document.querySelector('.carousel') as HTMLElement;
   const dots = document.querySelectorAll('.nav-dot');
-  const airplane = document.querySelector('.airplane') as HTMLElement;
 
   function showSlide(index: number) {
     currentSlide = index;
