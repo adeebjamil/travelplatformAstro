@@ -30,7 +30,7 @@ const servicesData = [
     image: "./src/assets/serviceimg/service6.jpg",
     text: "Global Air Ticketing Platform",
     route: "/service6",
-  },
+  }
 ];
 ---
 
@@ -48,7 +48,7 @@ const servicesData = [
           <img
             src={service.image}
             alt={`Service ${index + 1}`}
-            class="w-full h-40 object-cover rounded-lg mb-4"
+            class="w-full h-40 object-contain rounded-lg mb-4"
           />
           <p class="mb-4">{service.text}</p>
           <a
