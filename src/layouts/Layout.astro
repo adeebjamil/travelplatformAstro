@@ -1,16 +1,51 @@
 ---
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
+// filepath: /C:/Users/Adeeb/OneDrive - K L University/Desktop/astrotravel/travel/src/pages/index.astro
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { SEO } from "astro-seo";
 ---
 
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <title>Travel Platform</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="shortcut icon" href="./src/public/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/public/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- SEO Metadata -->
+    <SEO
+      title="Travel Platform"
+      description="At Travel Platform, we believe that travel should be an enriching and hassle-free adventure."
+      canonical="https://yourwebsite.com"
+      openGraph={{
+        basic: {
+          title: "Travel Platform",
+          type: "website",
+          image: "https://yourwebsite.com/og-image.jpg",
+          url: "https://yourwebsite.com",
+        },
+        optional: {
+          description:
+            "At Travel Platform, we believe that travel should be an enriching and hassle-free adventure.",
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+        site: "@yourtwitterhandle",
+        title: "Travel Platform",
+        description:
+          "At Travel Platform, we believe that travel should be an enriching and hassle-free adventure.",
+        image: "https://yourwebsite.com/og-image.jpg",
+      }}
+    />
   </head>
   <body>
     <Navbar />
