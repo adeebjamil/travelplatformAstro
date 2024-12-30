@@ -3,6 +3,7 @@
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import { SEO } from "astro-seo";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
 ---
 
 <html lang="en">
@@ -49,6 +50,7 @@ import { SEO } from "astro-seo";
   </head>
   <body>
     <Navbar />
+    <WhatsAppButton mobile="7033772680" message="Hello, I need assistance!" />
     <main>
       <slot />
     </main>
