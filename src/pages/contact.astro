@@ -2,6 +2,39 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
+<head>
+  <title>Contact Us - Travel Platform UAE</title>
+  <meta
+    name="description"
+    content="Get in touch with our team for any inquiries or assistance. Contact us via email, phone, or visit our office in Dubai, UAE."
+  />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Travel Platform UAE",
+        "url": "https://www.travelplatformuae.com",
+        "logo": "https://www.travelplatformuae.com/src/assets/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+971 52 2345 572",
+          "contactType": "Customer Service",
+          "areaServed": "AE",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mango Hyper Market, Near Al Khail Gate, Al Qouz",
+          "addressLocality": "Dubai",
+          "addressCountry": "UAE"
+        }
+      }
+    }
+  </script>
+</head>
+
 <Layout>
   <!-- Hero Section -->
   <div
@@ -109,7 +142,11 @@ import Layout from "../layouts/Layout.astro";
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 ></path>
               </svg>
-              <span><a href="info@travelplatformuae.com">info@travelplatformuae.com</a></span>
+              <span
+                ><a href="info@travelplatformuae.com"
+                  >info@travelplatformuae.com</a
+                ></span
+              >
             </li>
             <li class="flex items-center">
               <svg

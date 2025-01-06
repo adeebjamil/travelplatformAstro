@@ -2,6 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import JoinUs from '../components/JoinUs.astro';
 
+
+
+
+
 const services = [
   {
     title: "B2B Booking Solutions for Travel Agencies and Corporate Entities",
@@ -77,6 +81,57 @@ const services = [
   }
 ];
 ---
+
+
+<head>
+  <title>Travel Platform - Services</title>
+  <meta
+    name="description"
+    content="We offer a wide range of services to meet your travel needs."
+  />
+  <meta property="og:title" content="Travel Platform - Services" />
+  <meta
+    property="og:description"
+    content="We offer a wide range of services to meet your travel needs."
+  />
+  <meta property="og:image" content="/src/assets/serviceimg/service1.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://travel-platform.netlify.app/services" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@travelplatformuae" />
+  <meta name="twitter:creator" content="@travelplatformuae" />
+  <meta name="twitter:image" content="/src/assets/serviceimg/service1.png" />
+  <meta name="twitter:image:alt" content="Travel Platform - Services" />
+  <meta name="twitter:title" content="Travel Platform - Services" />
+  <meta name="twitter:description" content="We offer a wide range of services to meet your travel needs." />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Travel Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Travel Platform UAE",
+        "url": "https://www.travelplatformuae.com",
+        "logo": "https://www.travelplatformuae.com/src/assets/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+971 52 2345 572",
+          "contactType": "Customer Service",
+          "areaServed": "AE",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mango Hyper Market, Near Al Khail Gate, Al Qouz",
+          "addressLocality": "Dubai",
+          "addressCountry": "UAE"
+        }
+      },
+      "description": "We offer a wide range of services to meet your travel needs."
+    }
+  </script>
+</head>
 
 <Layout>
   

@@ -3,6 +3,77 @@ import Layout from "../layouts/Layout.astro";
 import JoinUs from "../components/JoinUs.astro";
 ---
 
+<head>
+  <title>UAE Visit Visa Assistance</title>
+  <meta
+    name="description"
+    content="Comprehensive booking solutions tailored for travel agencies and corporate entities. Streamline your operations with our advanced platform."
+  />
+  <link rel="canonical" href="https://b2b.travelplatformonline.com/service10" />
+
+  <!-- SEO Meta Tags -->
+  <meta property="og:type" content="service" />
+  <meta property="og:title" content="UAE Visit Visa Assistance" />
+  <meta
+    property="og:description"
+    content="Comprehensive booking solutions tailored for travel agencies and corporate entities. Streamline your operations with our advanced platform."
+  />
+  <meta
+    property="og:url"
+    content="https://b2b.travelplatformonline.com/service10"
+  />
+  <meta
+    property="og:image"
+    content="https://b2b.travelplatformonline.com/src/assets/serviceimg/service10.jpg"
+  />
+  <meta property="og:image:alt" content="UAE Visit Visa Assistance" />
+  <meta property="og:site_name" content="Travel Platform" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@travelplatform" />
+  <meta name="twitter:title" content="UAE Visit Visa Assistance" />
+  <meta
+    name="twitter:description"
+    content="Comprehensive booking solutions tailored for travel agencies and corporate entities. Streamline your operations with our advanced platform."
+  />
+  <meta
+    name="twitter:image"
+    content="https://b2b.travelplatformonline.com/src/assets/serviceimg/service10.jpg"
+  />
+  <meta name="twitter:image:alt" content="UAE Visit Visa Assistance" />
+
+  <!-- Structured Data -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "UAE Visit Visa Assistance",
+      "description": "Comprehensive booking solutions tailored for travel agencies and corporate entities. Streamline your operations with our advanced platform.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Travel Platform",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/src/assets/logo.png"
+        }
+      },
+      "serviceType": "Travel Booking",
+      "areaServed": "Global",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://b2b.travelplatformonline.com",
+        "priceCurrency": "USD",
+        "price": "Varies",
+        "eligibleRegion": {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      }
+    }
+  </script>
+</head>
+
 <Layout title="Our Services">
   <!-- Hero Section with Parallax (Keeping this part) -->
   <div
@@ -35,7 +106,7 @@ import JoinUs from "../components/JoinUs.astro";
         <p
           class="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto animate-fade-in-up"
         >
-        Innovative solutions for modern travel challenges
+          Innovative solutions for modern travel challenges
         </p>
       </div>
     </div>
@@ -45,7 +116,9 @@ import JoinUs from "../components/JoinUs.astro";
   <section class="py-10 sm:py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Main Service Feature -->
-      <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-10 sm:mb-20">
+      <div
+        class="bg-white rounded-2xl shadow-xl overflow-hidden mb-10 sm:mb-20"
+      >
         <div class="grid grid-cols-1 lg:grid-cols-2">
           <div class="p-6 sm:p-12 flex flex-col justify-center">
             <div class="flex items-center gap-6 mb-4 sm:mb-8">
@@ -55,7 +128,8 @@ import JoinUs from "../components/JoinUs.astro";
                 class="hidden sm:block w-15 h-15 sm:w-18 sm:h-18 object-contain"
               />
               <h2 class="text-2xl sm:text-4xl font-bold text-gray-900">
-                <span class="text-yellow-500">UAE Visit</span><br />Visa Assistance
+                <span class="text-yellow-500">UAE Visit</span><br />Visa
+                Assistance
               </h2>
             </div>
 
@@ -143,7 +217,9 @@ import JoinUs from "../components/JoinUs.astro";
       </div>
 
       <!-- Service Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8"
+      >
         {
           [
             {
@@ -194,10 +270,14 @@ import JoinUs from "../components/JoinUs.astro";
               <div class={`bg-${service.color}-50 p-4 sm:p-6`}>
                 <div class="flex space-x-2 mb-2 sm:mb-4">
                   {service.colors.map((color) => (
-                    <div class={`w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-${color}`} />
+                    <div
+                      class={`w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-${color}`}
+                    />
                   ))}
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold text-gray-900">{service.title}</h3>
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">
+                  {service.title}
+                </h3>
                 <p class="mt-2 text-gray-600">{service.description}</p>
               </div>
               <div class="px-4 py-2 sm:px-6 sm:py-4 bg-gray-50 flex justify-between items-center">
@@ -218,28 +298,35 @@ import JoinUs from "../components/JoinUs.astro";
 
     <!-- New Section with Image and Text -->
     <div class="flex items-center justify-center my-10 mt-10">
-        <img src="/src/assets/serviceimg/hello1.png" alt="UAE Visit Visa" class="w-1/3 h-auto object-cover rounded-lg shadow-lg" />
-        <div class="ml-6 text-gray-900">
-          <h2 class="text-2xl font-bold">UAE Visit Visa</h2>
-          <p class="mt-4">96 Hours Transit Visa (Ticket required for onward journey to third country/final destination)</p>
-          <p class="mt-2">30 Days</p>
-          <p class="mt-2">60 Days</p>
-          <h3 class="mt-4 text-xl font-semibold">Required Documents to apply</h3>
-          <ul class="list-disc list-inside mt-2">
-            <li>Guarantors passport and visa copies.</li>
-            <li>Guarantors Emirates ID copy.</li>
-            <li>Visitors passport copy with White Background photo</li>
-            <li>Visitors passport-size photograph.</li>
-            <li>Additional cash deposit (fully refundable) may be required for certain nationalities</li>
-          </ul>
-          <p class="mt-4">Terms and conditions apply.</p>
-          <p class="mt-4 font-bold">***No grace period allowed***</p>
-        </div>
+      <img
+        src="/src/assets/serviceimg/hello1.png"
+        alt="UAE Visit Visa"
+        class="w-1/3 h-auto object-cover rounded-lg shadow-lg"
+      />
+      <div class="ml-6 text-gray-900">
+        <h2 class="text-2xl font-bold">UAE Visit Visa</h2>
+        <p class="mt-4">
+          96 Hours Transit Visa (Ticket required for onward journey to third
+          country/final destination)
+        </p>
+        <p class="mt-2">30 Days</p>
+        <p class="mt-2">60 Days</p>
+        <h3 class="mt-4 text-xl font-semibold">Required Documents to apply</h3>
+        <ul class="list-disc list-inside mt-2">
+          <li>Guarantors passport and visa copies.</li>
+          <li>Guarantors Emirates ID copy.</li>
+          <li>Visitors passport copy with White Background photo</li>
+          <li>Visitors passport-size photograph.</li>
+          <li>
+            Additional cash deposit (fully refundable) may be required for
+            certain nationalities
+          </li>
+        </ul>
+        <p class="mt-4">Terms and conditions apply.</p>
+        <p class="mt-4 font-bold">***No grace period allowed***</p>
       </div>
-  
+    </div>
 
-   
-   
     <JoinUs />
   </section>
 
