@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const title: string= "Travel Platform -  Contact Us";
 ---
 
 <head>
-  <title>Contact Us - Travel Platform UAE</title>
+  <title>{title}</title>
   <meta
     name="description"
     content="Get in touch with our team for any inquiries or assistance. Contact us via email, phone, or visit our office in Dubai, UAE."
@@ -35,7 +36,7 @@ import Layout from "../layouts/Layout.astro";
   </script>
 </head>
 
-<Layout>
+<Layout title={title}>
   <!-- Hero Section -->
   <div
     class="relative h-[60vh] sm:h-[50vh] md:h-[60vh] bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 overflow-hidden"

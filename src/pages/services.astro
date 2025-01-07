@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import JoinUs from '../components/JoinUs.astro';
+const title: string= "Travel Platform - Services";
 
 
 
@@ -84,7 +85,16 @@ const services = [
 
 
 <head>
+  <title>{title}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
   <title>Travel Platform - Services</title>
+  <meta
+    name="keywords"
+    content="Travel, Booking, Services, Dubai, UAE, Travel Agencies, Corporate Entities"  
+  />
   <meta
     name="description"
     content="We offer a wide range of services to meet your travel needs."
@@ -94,15 +104,6 @@ const services = [
     property="og:description"
     content="We offer a wide range of services to meet your travel needs."
   />
-  <meta property="og:image" content="/src/assets/serviceimg/service1.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://travel-platform.netlify.app/services" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@travelplatformuae" />
-  <meta name="twitter:creator" content="@travelplatformuae" />
-  <meta name="twitter:image" content="/src/assets/serviceimg/service1.png" />
-  <meta name="twitter:image:alt" content="Travel Platform - Services" />
-  <meta name="twitter:title" content="Travel Platform - Services" />
   <meta name="twitter:description" content="We offer a wide range of services to meet your travel needs." />
   <script type="application/ld+json">
     {
@@ -133,7 +134,7 @@ const services = [
   </script>
 </head>
 
-<Layout>
+<Layout title={title}>
   
   
      <!-- Hero Section -->

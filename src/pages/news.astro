@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import JoinUs from "../components/JoinUs.astro";
+const title: string= "Travel Platform -  Our News";
+
 
 const newsArticles = [
   {
@@ -37,7 +39,7 @@ const newsArticles = [
 ---
 
 <head>
-  <title>Travel Platform - Latest Travel News</title>
+  <title>{title}</title>
   <meta
     name="description"
     content="Stay updated with the latest travel news and updates."
@@ -47,9 +49,6 @@ const newsArticles = [
     property="og:description"
     content="Stay updated with the latest travel news and updates."
   />
-  <meta property="og:image" content="/src/assets/new/new2.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://travel-platform.netlify.app/news" />
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json">
     {
