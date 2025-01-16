@@ -1,20 +1,31 @@
 ---
-// filepath: /C:/Users/Adeeb/OneDrive - K L University/Desktop/astrotravel/travel/src/pages/index.astro
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import { SEO } from "astro-seo";
 import WhatsAppButton from "../components/WhatsAppButton.astro";
-const {title}= Astro.props;
----
+export interface Props {
+	title: string;
+  description:string;
+	structuredData?: object;
 
+ }
+const {title,description,structuredData,}= Astro.props;
+
+---
 <html lang="en">
   <head>
-  
-    <meta name="description" content="At Travel Platform, we believe that travel should be an enriching and hassle-free adventure.">
-    <!-- SEO Metadata -->
+    {
+      structuredData && (
+        <script
+        is:inline
+					type="application/ld+json"
+					set:html={JSON.stringify(structuredData)}
+        />
+      )
+    }
     <SEO
       title={ title ?? "travel platform"}
-      description="At Travel Platform, we believe that travel should be an enriching and hassle-free adventure."
+      description= { description ?? "At Travel Platform, we believe that travel should be an enriching and hassle-free adventure."}
       canonical="https://yourwebsite.com"
       openGraph={{
         basic: {
@@ -42,7 +53,7 @@ const {title}= Astro.props;
     <Navbar />
     <WhatsAppButton mobile="7033772680" message="Hello, I need assistance!" />
     <main>
-      <slot />
+    <slot />
     </main>
     <Footer />
   </body>

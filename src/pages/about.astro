@@ -1,56 +1,29 @@
 ---
-import { voidElementNames } from "astro/runtime/server/index.js";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Visionmission from "../components/visionmission.astro";
 import TravellerReviews from "../components/TravellerReview.astro";
 import JoinUs from "../components/JoinUs.astro";
 const title = "Travel Platform - About Us";
+const description:string ="djdxkgjdklgjdfl"
+const structuredData = 
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Travel Platform",
+  "description": {description},
+  "url": "https://yourwebsite.com"
+}
+    
+ 
 ---
 
-<head>
-  <title>{title}</title>
-  <meta
-    name="description"
-    content="Innovative solutions for modern travel challenges"
-  />
-  <meta property="og:title" content="Travel Platform - About Us" />
-  <meta
-    property="og:description"
-    content="Innovative solutions for modern travel challenges"
-  />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "Travel Platform UAE",
-        "url": "https://www.travelplatformuae.com",
-        "logo": "https://www.travelplatformuae.com/src/assets/logo.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+971 52 2345 572",
-          "contactType": "Customer Service",
-          "areaServed": "AE",
-          "availableLanguage": "English"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Mango Hyper Market, Near Al Khail Gate, Al Qouz",
-          "addressLocality": "Dubai",
-          "addressCountry": "UAE"
-        }
-      },
-      "description": "Innovative solutions for modern travel challenges"
-    }
-  </script>
-</head>
 
 
 
-<Layout title = {title}>
-  <!-- Hero Section with Parallax (Keeping this part) -->
+
+<Layout title = {title}, description={description} structuredData ={structuredData},>
+ 
   <div
     class="relative h-[60vh] sm:h-[50vh] md:h-[60vh] bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 overflow-hidden"
   >

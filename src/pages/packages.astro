@@ -3,69 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Headerimg from '../components/Headerimg.astro';
 import JoinUs from '../components/JoinUs.astro';
 const title: string= "Travel Platform -  Our Packages";
-
-const packagesData = [
-  {
-    image: "./src/assets/ourpackage/package1.png",
-    title: "Holiday's packages in dubai",
-    description: "Explore the hidden gems of the city.",
-    price: "Starting from per person",
-    route: "https://b2b.travelplatformonline.com/"
-  },
-  {
-    image: "./src/assets/ourpackage/package2.png",
-    title: "Holiday's packages in singapore",
-    description: "Discover iconic landmarks and off-the-beaten-path gems.",
-    price: "Starting from per person",
-    route: "https://b2b.travelplatformonline.com/"
-  },
-  {
-    image: "./src/assets/ourpackage/package3.jpg",
-    title: "Umrah packages",
-    description: "Umrah 2024: Everything You Need to Know",
-    price: "Starting from per person",
-    route: "https://b2b.travelplatformonline.com/"
-  },
-  {
-    image: "./src/assets/ourpackage/package1.png",
-    title: "Holiday's packages in dubai",
-    description: "Explore the hidden gems of the city.",
-    price: "Starting from per person",
-    route: "https://b2b.travelplatformonline.com/"
-  },
-  {
-    image: "./src/assets/ourpackage/package1.png",
-    title: "Holiday's packages in dubai",
-    description: "Explore the hidden gems of the city.",
-    price: "Starting from per person",
-    route: "https://b2b.travelplatformonline.com/"
-  },
-  {
-    image: "./src/assets/ourpackage/package1.png",
-    title: "Holiday's packages in dubai",
-    description: "Explore the hidden gems of the city.",
-    price: "Starting from per person",
-    route: "https://b2b.travelplatformonline.com/"
-  }
-];
----
-
-
-<head>
-  <title>{title}</title>
-  <meta
-    name="description"
-    content="Explore our travel packages to various destinations."
-  />
-  <meta property="og:title" content="Travel Platform - Our Packages" />
-  <meta
-    property="og:description"
-    content="Explore our travel packages to various destinations."
-  />  
-  <meta property="og:image" content="./src/assets/ourpackage/package1.png" />
-  <meta name="twitter:description" content="Explore our travel packages to various destinations." />
-  <script type="application/ld+json">
-    {
+const description = "Explore our travel packages to various destinations."
+const structuredData ={
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Travel Packages",
@@ -113,14 +52,56 @@ const packagesData = [
         }
       ]
     }
-  </script>
-</head>
+const packagesData = [
+  {
+    image: "./src/assets/ourpackage/package1.png",
+    title: "Holiday's packages in dubai",
+    description: "Explore the hidden gems of the city.",
+    price: "Starting from per person",
+    route: "https://b2b.travelplatformonline.com/"
+  },
+  {
+    image: "./src/assets/ourpackage/package2.png",
+    title: "Holiday's packages in singapore",
+    description: "Discover iconic landmarks and off-the-beaten-path gems.",
+    price: "Starting from per person",
+    route: "https://b2b.travelplatformonline.com/"
+  },
+  {
+    image: "./src/assets/ourpackage/package3.jpg",
+    title: "Umrah packages",
+    description: "Umrah 2024: Everything You Need to Know",
+    price: "Starting from per person",
+    route: "https://b2b.travelplatformonline.com/"
+  },
+  {
+    image: "./src/assets/ourpackage/package1.png",
+    title: "Holiday's packages in dubai",
+    description: "Explore the hidden gems of the city.",
+    price: "Starting from per person",
+    route: "https://b2b.travelplatformonline.com/"
+  },
+  {
+    image: "./src/assets/ourpackage/package1.png",
+    title: "Holiday's packages in dubai",
+    description: "Explore the hidden gems of the city.",
+    price: "Starting from per person",
+    route: "https://b2b.travelplatformonline.com/"
+  },
+  {
+    image: "./src/assets/ourpackage/package1.png",
+    title: "Holiday's packages in dubai",
+    description: "Explore the hidden gems of the city.",
+    price: "Starting from per person",
+    route: "https://b2b.travelplatformonline.com/"
+  }
+];
+---
 
 
 
 
-
-<Layout title = {title}>
+<Layout title = {title} description={description} structuredData ={structuredData}>
   <!-- Hero Section -->
    <!-- Hero Section with Parallax (Keeping this part) -->
    <div

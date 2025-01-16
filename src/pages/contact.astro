@@ -1,42 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 const title: string= "Travel Platform -  Contact Us";
+const description:string ="djdxkgjdklgjdfl"
+const structuredData = 
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Travel Platform",
+  "description": {description},
+  "url": "https://yourwebsite.com"
+}
 ---
 
-<head>
-  <title>{title}</title>
-  <meta
-    name="description"
-    content="Get in touch with our team for any inquiries or assistance. Contact us via email, phone, or visit our office in Dubai, UAE."
-  />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "Travel Platform UAE",
-        "url": "https://www.travelplatformuae.com",
-        "logo": "https://www.travelplatformuae.com/src/assets/logo.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+971 52 2345 572",
-          "contactType": "Customer Service",
-          "areaServed": "AE",
-          "availableLanguage": "English"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Mango Hyper Market, Near Al Khail Gate, Al Qouz",
-          "addressLocality": "Dubai",
-          "addressCountry": "UAE"
-        }
-      }
-    }
-  </script>
-</head>
 
-<Layout title={title}>
+
+<Layout title={title} description={description} structuredData ={structuredData} >
   <!-- Hero Section -->
   <div
     class="relative h-[60vh] sm:h-[50vh] md:h-[60vh] bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 overflow-hidden"

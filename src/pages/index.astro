@@ -1,5 +1,4 @@
 ---
-// filepath: /C:/Users/Adeeb/OneDrive - K L University/Desktop/astrotravel/travel/src/pages/index.astro
 import Carousel from '../components/Carousel.astro';
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
@@ -9,34 +8,18 @@ import TravellerReview from '../components/TravellerReview.astro';
 import OurPartner from '../components/OurPartner.astro';
 import JoinUs from '../components/JoinUs.astro';
 const title: string = "Travel Platform - Online Travel Agency";
+const description:string ="djdxkgjdklgjdfl"
+const structuredData = 
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Travel Platform",
+  "description": {description},
+  "url": "https://yourwebsite.com"
+}
 ---
-<head>
-  <title>{title}</title>
-  <meta property="og:title" content="Travel Platform - Online Travel Agency" />
-  <meta property="og:description" content="Travel Platform - Online travel agency and B2B travel booking platform. Book flights, hotels, and packages at competitive prices." />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Travel Platform",
-      "url": "https://b2b.travelplatformonline.com",
-      "logo": "https://b2b.travelplatformonline.com/src/assets/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/travelplatform",
-        "https://www.twitter.com/travelplatform",
-        "https://www.instagram.com/travelplatform"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-800-555-5555",
-        "contactType": "Customer Service"
-      }
-    }
-  </script>
-</head>
 
-
-<Layout title={title}>
+<Layout title={title}, description={description} structuredData ={structuredData},>
   <Carousel />
   <Header />
   <Services />
